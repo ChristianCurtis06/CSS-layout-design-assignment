@@ -1,0 +1,1 @@
+This repository includes the assignment: CSS Layout Design in Module 8: Lesson 3 of the Software Engineering Core.
