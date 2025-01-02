@@ -1,0 +1,67 @@
+/* Task 1: Create a Basic CSS Grid Layout */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+    row-gap: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(6, 32, 79);
+}
+
+header > h1 {
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    color: white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: rgb(6, 32, 79);
+}
+
+footer > h2 {
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    color: white;
+}
+
+/* Task 3: Advanced Grid Layout with Template Columns and Rows */
+main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 300px auto;
+}
+
+#content, #sidebar {
+    padding: 20px;
+    background-color: rgb(193, 211, 255);
+}
+
+#content > h2, #sidebar > h2 {
+    text-align: center;
+}
+
+#sidebar ul li {
+    padding: 10px 0;
+}
+
+#sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Task 2: Implement Responsive Design Using CSS Grid */
+@media screen and (max-width: 768px) {
+    main {
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+}
